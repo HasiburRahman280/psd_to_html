@@ -1,0 +1,508 @@
+/*----------------------------------------------------------------------------------
+	Template Name: E-commerce Website
+	Template URL: http://www.yourwebsitename.com
+	Description: Personal Website
+	Author: Sharmin Sultana
+	Author URL: http://www.yourwebsitename.com
+	License: GNU General Public 
+	Version: 2022.0.1
+-----------------------------------------------------------------------------------
+	1. Font Family Import
+	2. Typography Area
+	3. Header Secttion
+	4. Banner Secttion
+	5. Brand Secttion
+	6. Footer Secttion
+-----------------------------------------------------------------------------------*/
+/*************** 1. Font Family Import Start ***************/
+@import url(../css/font-family.css);
+/*************** Font Family Import End ***************/
+
+
+/************** 2. Typography Area Start **************/
+h1, h2, h3, h4, h5, h6, p, ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+/************** Typography Area End **************/
+
+
+
+/************** 3. Header Secttion Start **************/
+/* Header Top Style */
+.header-top{
+    background-color: #333333;
+}
+
+.currency-input{
+    padding: 15px 0;
+}
+
+#currency,
+.currency-input label{
+    font-family: "Montserrat-Medium";
+    font-weight: 500;
+    font-size: 13px;
+    color: #a7a0a0;
+}
+
+#currency{
+    background-color: transparent;
+    border: none;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+#currency:focus-visible{
+    outline: none;
+}
+
+#currency option{
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.right-collumn ul li{
+    padding: 15px 20px;
+}
+
+.right-collumn ul li a{
+    font-family: "Montserrat-Medium";
+    font-weight: 500;
+    color: #a7a0a0;
+    font-size: 13px;
+    transition: .4s;
+}
+
+.right-collumn ul li a:hover{
+    color: #0084cc;
+}
+
+.cart{
+    margin-left: 50px;
+}
+
+.cart a{
+    color: #ffffff;
+    background-color: #0084cc;
+    padding: 15px 25px;
+    transition: .4s;
+}
+
+.cart a:hover{
+    background-color: #0084cc;
+}
+
+/* Navbar Style */
+.navbar{
+    padding: 10px 0;
+    transition: .5s;
+}
+
+.sticky{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+    background-color: #333333;
+	z-index: 1000;
+}
+
+.sticky .navbar-brand {
+    display: inline-flex;
+    padding: 0;
+}
+
+.sticky-logo{
+    display: none;
+}
+
+.logo-text{
+    font-size: 30px;
+}
+
+.nav-link{
+    padding: 0;
+}
+
+.nav-link, .item{
+    font-family: "Montserrat-SemiBold";
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link{
+    color: #222222;
+    transition: .4s;
+}
+
+.sticky .navbar-nav .nav-link{
+    color: #ffffff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    margin-top: 14px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover,
+.sticky .navbar-nav .nav-link:hover {
+    color: #0084cc;
+}
+
+/* Menu Dropdown Style */
+.dropdown .dropdown-menu {
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateX(0) scaleY(0);
+    transform-origin: top;
+    left: 25px;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    transform: translateX(0) scaleY(1);
+}
+
+.custom-dropdown{
+    min-width: 23rem;
+    padding: 20px;
+    border: none;
+    -webkit-box-shadow: 0px 8px 20px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 8px 20px -12px rgba(0,0,0,0.75);
+    box-shadow: 0px 8px 20px -12px rgba(0,0,0,0.75);
+}
+
+.dropdown-toggle::after{
+    font-family: "fa-solid";
+    font-weight: 400;
+    content: "\f107";
+    border: none;
+    margin: 0;
+    font-size: 14px;
+}
+
+.dropdown-menu[data-bs-popper] {
+    margin-top: 0;
+    left: 25px;
+}
+
+.custom-dropdown .dropdown-item{
+    display: inline-block;
+    font-family: "Montserrat-Regular";
+    font-weight: 400;
+    padding: 5px 0;
+    text-transform: capitalize;
+    color: #727272;
+    font-size: 14px;
+    transition: .4s;
+}
+
+.custom-dropdown .drop-title{
+    display: block;
+    font-family: "Montserrat-SemiBold";
+    font-weight: 600;
+    font-size: 12px;
+    color: #222222;
+    cursor: pointer;
+}
+
+.custom-dropdown .dropdown-item:focus, .custom-dropdown .dropdown-item:hover {
+    margin-left: 5px;
+    color: #0084cc;
+    background-color: transparent;
+}
+
+.sale-banner{
+    padding: 25px 0;
+    text-align: center;
+    background-color: #333333;
+}
+
+.sale-banner h3,
+.sale-banner h3 span{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.sale-banner h3{
+    font-family: "Proximanova-Bold";
+    font-weight: 700;
+}
+
+.sale-banner h3 span{
+    display: block;
+    font-family: "Proximanova-Light";
+    font-weight: 300;
+    margin-top: 8px;
+}
+
+.search-form{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 6px;
+}
+
+.search-btn{
+    padding: 10px;
+    border: 1px solid #e7e7e7;
+    transition: .5s;
+}
+
+.search-btn:focus{
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0,132,204,1);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0,132,204,1);
+    box-shadow: 0px 0px 2px 0px rgba(0,132,204,1);
+}
+
+.search-btn:focus-visible{
+    outline: none;
+}
+
+.submit-btn{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(6rem, -60%);
+    font-size: 16px;
+    color: #989898;
+    background-color: transparent;
+    border: none;
+    transition: .4s;
+}
+
+.submit-btn:hover{
+    color: #0084cc;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+/************** Header Secttion End **************/
+
+
+
+/************** 4. Banner Secttion Start **************/
+.sharmin-banner{
+	background: url(../images/breadcrumb-img.jpg) no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+
+.overlay{
+	padding: 130px 10px;
+	background-color: rgba(51, 51, 51, .75);
+}
+
+.banner-content{
+	text-align: center;
+}
+
+.banner-content h2,
+.banner-content h5{
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.banner-content h2{
+	font-family: "Montserrat-SemiBold";
+	font-weight: 600;
+	font-size: 45px;
+} 
+
+.banner-content h2 span{
+	font-family: "Montserrat-Light";
+	font-weight: 300;
+}
+
+.banner-content h5{
+	margin-top: 20px;
+	font-family: "Montserrat-Regular";
+	font-weight: 400;
+	font-size: 30px;
+}
+/************** Banner Secttion End **************/
+
+
+
+/************** 5. Brand Secttion Start **************/
+.sharmin-brands{
+	padding: 60px 0 100px;
+}
+
+.brand-content h5{
+	font-family: "Montserrat-SemiBold";
+	font-weight: 600;
+	color: #333333;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.brand-content h6{
+	margin: 15px 0 10px;
+	font-family: "Montserrat-SemiBold";
+	font-weight: 600;
+	color: #5c5e5c;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.brand-content p{
+	font-family: "Montserrat-Regular";
+	font-weight: 400;
+	color: #8d8f8e;
+	font-size: 13px;
+}
+
+.brand-content span,
+.brand-content a{
+	color: #00c8c8;
+}
+
+.brand-logo{
+	margin-top: 70px;
+}
+
+.b-logo-img{
+	max-width: 150px;
+}
+/************** Brand Secttion End **************/
+
+
+
+/************** 6. Footer Secttion Start **************/
+.footer{
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+/* Footer Top */
+.footer-title{
+    display: block;
+    font-family: "Montserrat-SemiBold";
+    font-weight: 600;
+    font-size: 13px;
+    color: #222222;
+}
+
+.footer-link li a,
+.contact-details p,
+.contact-details p a{
+    font-family: "Montserrat-Regular";
+    font-weight: 400;
+    padding: 5px 0;
+    color: #727272;
+    font-size: 14px;
+    transition: .4s;
+}
+
+.footer-link li a:hover{
+    margin-left: 5px;
+    color: #0084cc;
+}
+
+.contact-details p a:hover{
+    color: #0084cc;
+}
+
+/* Footer Bottom */
+.footer-bottom{
+    margin-top: 50px;
+}
+
+.footer-banner,
+.footer-social{
+    height: 100%;
+    padding: 50px 10px;
+}
+
+.footer-banner{
+    background-color: #333333;
+}
+
+.footer-banner h3,
+.footer-banner h3 span{
+    color: #ffffff;
+    font-size: 36px;
+}
+
+.footer-banner h3{
+    font-family: "Proximanova-Bold";
+    font-weight: 700;
+}
+.footer-banner h3 span{
+    display: block;
+    font-family: "Proximanova-Light";
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.footer-social{
+    background-color: #0084cc;
+}
+
+.footer-social ul li{
+    padding: 0 20px;
+}
+
+.footer-social ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 30px;
+    transition: .4s;
+}
+
+.footer-social ul li a:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.75);
+}
+
+/* Footer Copyright */
+.copyright{
+    padding: 15px 0;
+    background-color: #333333;
+}
+
+.copy-r-text,
+.copy-r-text a{
+    font-family: "Montserrat-Medium";
+    font-weight: 500;
+    color: #a7a0a0;
+    font-size: 13px;
+    transition: .4s;
+}
+
+.copy-r-text sup{
+    font-size: 8px;
+}
+
+.copy-r-text a:hover{
+    color: #0084cc;
+}
+/************** Footer Secttion End **************/

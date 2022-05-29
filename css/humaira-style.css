@@ -1,0 +1,478 @@
+/*----------------------------------------------------------------------------------
+	Template Name: Portfolio Personal Website
+	Template URL: http://www.yourwebsitename.com
+	Description: Personal Website
+	Author: Humaira Khatun
+	Author URL: http://www.yourwebsitename.com
+	License: GNU General Public 
+	Version: 2022.0.1
+-----------------------------------------------------------------------------------
+	1. Typography Area
+	2. Header Section
+	3. Banner Secttion
+	4. Sign In and Register Section
+	5. Contact Details Section
+-----------------------------------------------------------------------------------*/
+
+/************** 1. Typography Area Start **************/
+@import url(../css/font-family.css);
+
+h1, h2, h3, h4, h5, h6, p, ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+/************** Typography Area End **************/
+
+
+/************** 2. Header Secttion Start **************/
+/* Header Top Style */
+.header-top{
+    background-color: #333333;
+}
+
+.currency-input{
+    padding: 15px 0;
+}
+
+#currency,
+.currency-input label{
+    font-family: "Montserrat-Medium";
+    font-weight: 500;
+    font-size: 13px;
+    color: #a7a0a0;
+}
+
+#currency{
+    background-color: transparent;
+    border: none;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+#currency:focus-visible{
+    outline: none;
+}
+
+#currency option{
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.right-collumn ul li{
+    padding: 15px 20px;
+}
+
+.right-collumn ul li a{
+    font-family: "Montserrat-Medium";
+    font-weight: 500;
+    color: #a7a0a0;
+    font-size: 13px;
+    transition: .4s;
+}
+
+.right-collumn ul li a:hover{
+    color: #0084cc;
+}
+
+.cart{
+    margin-left: 50px;
+}
+
+.cart a{
+    color: #ffffff;
+    background-color: #0084cc;
+    padding: 15px 25px;
+    transition: .4s;
+}
+
+.cart a:hover{
+    background-color: #0084cc;
+}
+
+/* Navbar Style */
+.navbar{
+    padding: 10px 0;
+    transition: .5s;
+}
+
+.sticky{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+    background-color: #333333;
+	z-index: 1000;
+}
+
+.sticky .navbar-brand {
+    display: inline-flex;
+    padding: 0;
+}
+
+.sticky-logo{
+    display: none;
+}
+
+.logo-text{
+    font-size: 30px;
+}
+
+.nav-link{
+    padding: 0;
+}
+
+.nav-link, .item{
+    font-family: "Montserrat-SemiBold";
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link{
+    color: #222222;
+    transition: .4s;
+}
+
+.sticky .navbar-nav .nav-link{
+    color: #ffffff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    margin-top: 14px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover,
+.sticky .navbar-nav .nav-link:hover {
+    color: #0084cc;
+}
+
+/* Menu Dropdown Style */
+.dropdown .dropdown-menu {
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateX(0) scaleY(0);
+    transform-origin: top;
+    left: 25px;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    transform: translateX(0) scaleY(1);
+}
+
+.custom-dropdown{
+    min-width: 23rem;
+    padding: 20px;
+    border: none;
+    -webkit-box-shadow: 0px 8px 20px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 8px 20px -12px rgba(0,0,0,0.75);
+    box-shadow: 0px 8px 20px -12px rgba(0,0,0,0.75);
+}
+
+.dropdown-toggle::after{
+    font-family: "fa-solid";
+    font-weight: 400;
+    content: "\f107";
+    border: none;
+    margin: 0;
+    font-size: 14px;
+}
+
+.dropdown-menu[data-bs-popper] {
+    margin-top: 0;
+    left: 25px;
+}
+
+.custom-dropdown .dropdown-item{
+    display: inline-block;
+    font-family: "Montserrat-Regular";
+    font-weight: 400;
+    padding: 5px 0;
+    text-transform: capitalize;
+    color: #727272;
+    font-size: 14px;
+    transition: .4s;
+}
+
+.custom-dropdown .drop-title{
+    display: block;
+    font-family: "Montserrat-SemiBold";
+    font-weight: 600;
+    font-size: 12px;
+    color: #222222;
+    cursor: pointer;
+}
+
+.custom-dropdown .dropdown-item:focus, .custom-dropdown .dropdown-item:hover {
+    margin-left: 5px;
+    color: #0084cc;
+    background-color: transparent;
+}
+
+.sale-banner{
+    padding: 25px 0;
+    text-align: center;
+    background-color: #333333;
+}
+
+.sale-banner h3,
+.sale-banner h3 span{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.sale-banner h3{
+    font-family: "Proximanova-Bold";
+    font-weight: 700;
+}
+
+.sale-banner h3 span{
+    display: block;
+    font-family: "Proximanova-Light";
+    font-weight: 300;
+    margin-top: 8px;
+}
+
+.search-form{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 6px;
+}
+
+.search-btn{
+    padding: 10px;
+    border: 1px solid #e7e7e7;
+    transition: .5s;
+}
+
+.search-btn:focus{
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0,132,204,1);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0,132,204,1);
+    box-shadow: 0px 0px 2px 0px rgba(0,132,204,1);
+}
+
+.search-btn:focus-visible{
+    outline: none;
+}
+
+.submit-btn{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(6rem, -60%);
+    font-size: 16px;
+    color: #989898;
+    background-color: transparent;
+    border: none;
+    transition: .4s;
+}
+
+.submit-btn:hover{
+    color: #0084cc;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+/************** Header Secttion End **************/
+
+
+/************** 3. Banner Secttion End **************/
+.banner,
+.sign-in,
+.contact-details
+{
+	font-family: 'Montserrat', sans-serif;
+}
+.banner{
+	background: url(../images/breadcrumb-img.jpg);
+	height: 300px;
+	width: 100%;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+	color: white;
+	text-transform: uppercase;
+}
+.banner::before{
+	content: '';
+	display: block;
+	clear: both;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background: rgba(34, 34, 34, 0.72);
+}
+/************** 4. Sign In and Register Section Start **************/
+.text-color{
+	color: #00c8c8;
+}
+.sign-in h6{
+	color: #575153;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.sign-in .form-control{
+	border-radius: 0 !important;
+	font-size: 13px;
+	border: 1px solid #e7e7e7;
+}
+.sign-in .form-control:focus{
+	border: 1px solid #bb5465 !important;
+	box-shadow: none;
+	background: #fcf6f7;
+}
+.sign-in button{
+	background: #00c8c8;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 0;
+	padding: 10px 25px;
+}
+.sign-in button:hover{
+	background: #00c8c8;
+}
+.sign-in a,
+.sign-in label,
+.register span{
+	font-size: 12px;
+	font-weight: 600;
+}
+.sign-in label,
+.register span{
+	color: #8e8c8c;
+}
+.register button{
+	background: white;
+	color: #454647;
+	border: 1px solid #454647;
+	letter-spacing: 2px;
+	font-weight: 600;
+}
+.register button:hover{
+	border: 1px solid #00c8c8;
+}
+.register span{
+	text-align: center;
+	width: 43%;
+}
+.register{
+	border-left: 1px solid #e7e7e7;
+}
+/************** Sign In and Register Section End **************/
+
+
+/************** 5. Contact Details Section start **************/
+.contact-details{
+	background: #f8f8f8;
+}
+.contact-details h3{
+	color: #575153;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+}
+.contact-details ul li a{
+	color: #727272;
+	font-size: 12px;
+	font-weight: 600;
+}
+.contact-details ul li a:hover{
+	color: #00c8c8;
+}
+.contact-details .award{
+	background: #333333;
+}
+.contact-details .award h2{
+	text-transform: uppercase;
+	color: white;
+	font-size: 29px;
+	letter-spacing: 2px;
+	text-align: center;
+}
+.social{
+	background: #00c8c8;
+}
+.social ul{
+	text-align: center;
+}
+.social ul li{
+	display: inline-block;
+	padding: 17px 18px;
+}
+.social ul li a{
+	font-size: 25px;
+	color: white;
+
+}
+.social ul li a:hover{
+	color: white;
+}
+@media all and (max-width: 422px)
+{
+	.register span{
+		float: left !important;
+		margin-top: 20px;
+		width: 100%;
+		text-align: left;
+	}
+	.sign-in button {
+	  padding: 5px 19px;
+	  font-size: 14px;
+	}
+}
+@media all and (max-width: 990px)
+{
+	.register{
+		border-left: none;
+		margin-top: 20px;
+	}
+}
+
+/* Footer Copyright */
+.copyright{
+    padding: 15px 0;
+    background-color: #333333;
+}
+
+.copy-r-text,
+.copy-r-text a{
+    font-family: "Montserrat-Medium";
+    font-weight: 500;
+    color: #a7a0a0;
+    font-size: 13px;
+    transition: .4s;
+}
+
+.copy-r-text sup{
+    font-size: 8px;
+}
+
+.copy-r-text a:hover{
+    color: #0084cc;
+}
+/************** Contact Details Section end **************/

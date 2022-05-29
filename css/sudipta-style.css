@@ -1,0 +1,700 @@
+/*----------------------------------------------------------------------------------
+	Template Name: E-commerce Website
+	Template URL: http://www.yourwebsitename.com
+	Description: Personal Website
+	Author: Sudipta Mrong Sengko
+	Author URL: http://www.yourwebsitename.com
+	License: GNU General Public 
+	Version: 2022.0.1
+-----------------------------------------------------------------------------------
+    1. Font Family Import
+	2. Typography Area
+	3. Header Section
+	4. Hero Secttion
+	5. Products Secttion
+	6. Lookbook Banner Secttion
+	7. Footer Secttion
+-----------------------------------------------------------------------------------*/
+
+/************** 1. Font Family Import Start **************/
+@import url(../css/font-family.css);
+/************** Font Family Import End **************/
+
+
+/************** 2. Typography Area Start **************/
+h1, h2, h3, h4, h5, h6, p, ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+/************** 2. Typography Area End **************/
+
+
+
+/************** 3. Header Secttion Start **************/
+/* Header Top Style */
+.header-top{
+    background-color: #333333;
+}
+
+.currency-input{
+    padding: 15px 0;
+}
+
+#currency,
+.currency-input label{
+    font-family: "Montserrat-Medium";
+    font-weight: 500;
+    font-size: 13px;
+    color: #a7a0a0;
+}
+
+#currency{
+    background-color: transparent;
+    border: none;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+#currency:focus-visible{
+    outline: none;
+}
+
+#currency option{
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.right-collumn ul li{
+    padding: 15px 20px;
+}
+
+.right-collumn ul li a{
+    font-family: "Montserrat-Medium";
+    font-weight: 500;
+    color: #a7a0a0;
+    font-size: 13px;
+    transition: .4s;
+}
+
+.right-collumn ul li a:hover{
+    color: #0084cc;
+}
+
+.cart{
+    margin-left: 50px;
+}
+
+.cart a{
+    color: #ffffff;
+    background-color: #0084cc;
+    padding: 15px 25px;
+    transition: .4s;
+}
+
+.cart a:hover{
+    background-color: #0084cc;
+}
+
+/* Navbar Style */
+.navbar{
+    margin-top: 70px;
+    padding: 10px 0;
+    transition: .5s;
+}
+
+.sticky{
+    margin-top: 0 !important;
+    background-color: #333333;
+}
+
+.navbar-brand {
+    padding: 0 0 16px;
+}
+
+.sticky .navbar-brand {
+    display: inline-flex;
+    padding: 0;
+}
+
+.sticky-logo{
+    display: none;
+}
+
+.logo-text{
+    font-size: 30px;
+}
+
+.nav-link{
+    padding: 0;
+}
+
+.nav-link, .item{
+    font-family: "Montserrat-SemiBold";
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link{
+    color: #222222;
+    transition: .4s;
+}
+
+.sticky .navbar-nav .nav-link{
+    color: #ffffff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    margin-top: 14px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover,
+.sticky .navbar-nav .nav-link:hover {
+    color: #0084cc;
+}
+
+/* Menu Dropdown Style */
+.dropdown .dropdown-menu {
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateX(0) scaleY(0);
+    transform-origin: top;
+    left: 25px;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    transform: translateX(0) scaleY(1);
+}
+
+.custom-dropdown{
+    min-width: 23rem;
+    padding: 20px;
+    border: none;
+    -webkit-box-shadow: 0px 8px 20px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 8px 20px -12px rgba(0,0,0,0.75);
+    box-shadow: 0px 8px 20px -12px rgba(0,0,0,0.75);
+}
+
+.dropdown-toggle::after{
+    font-family: "fa-solid";
+    font-weight: 400;
+    content: "\f107";
+    border: none;
+    margin: 0;
+    font-size: 14px;
+}
+
+.dropdown-menu[data-bs-popper] {
+    margin-top: 0;
+    left: 25px;
+}
+
+.custom-dropdown .dropdown-item{
+    display: inline-block;
+    font-family: "Montserrat-Regular";
+    font-weight: 400;
+    padding: 5px 0;
+    text-transform: capitalize;
+    color: #727272;
+    font-size: 14px;
+    transition: .4s;
+}
+
+.custom-dropdown .drop-title{
+    display: block;
+    font-family: "Montserrat-SemiBold";
+    font-weight: 600;
+    font-size: 12px;
+    color: #222222;
+    cursor: pointer;
+}
+
+.custom-dropdown .dropdown-item:focus, .custom-dropdown .dropdown-item:hover {
+    margin-left: 5px;
+    color: #0084cc;
+    background-color: transparent;
+}
+
+.sale-banner{
+    padding: 25px 0;
+    text-align: center;
+    background-color: #333333;
+}
+
+.sale-banner h3,
+.sale-banner h3 span{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.sale-banner h3{
+    font-family: "Proximanova-Bold";
+    font-weight: 700;
+}
+
+.sale-banner h3 span{
+    display: block;
+    font-family: "Proximanova-Light";
+    font-weight: 300;
+    margin-top: 8px;
+}
+
+.search-form{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 6px;
+}
+
+.search-btn{
+    padding: 10px;
+    border: 1px solid #e7e7e7;
+    transition: .5s;
+}
+
+.search-btn:focus{
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0,132,204,1);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0,132,204,1);
+    box-shadow: 0px 0px 2px 0px rgba(0,132,204,1);
+}
+
+.search-btn:focus-visible{
+    outline: none;
+}
+
+.submit-btn{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(6rem, -60%);
+    font-size: 16px;
+    color: #989898;
+    background-color: transparent;
+    border: none;
+    transition: .4s;
+}
+
+.submit-btn:hover{
+    color: #0084cc;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+/************** Header Secttion End **************/
+
+
+
+/************** 4. Hero Secttion Start **************/
+.sudipta-hero{
+    position: relative;
+    background: url(../images/banner-img.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    /* min-height: 900px; */
+}
+
+.hero-btn{
+    position: absolute;
+    top: 86%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-btn a{
+    font-family: "Montserrat-Regular";
+    font-weight: 400;
+    font-size: 16px;
+    color: #737373;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #737373;
+    padding: 15px 25px;
+    width: max-content;
+    transition: .4s;
+}
+
+.hero-btn a:hover{
+    background-color: #0084cc;
+    color: #ffffff;
+    border-color: transparent;
+
+}
+/************** Hero Secttion End **************/
+
+
+
+/************** 5. Products Secttion Start **************/
+.products-hr,
+.products-hr-1{
+    margin: 50px 0;
+    background-color: #737373;
+}
+
+/* Filter Button */
+.filter{
+    margin-bottom: 50px;
+}
+
+.filter .filter-btn{
+    font-family: "Montserrat-SemiBold";
+    font-weight: 600;
+    font-size: 13px;
+    color: #737373;
+    text-transform: uppercase;
+    margin: 0 25px;
+    transition: .5s;
+    background-color: transparent;
+    border: none;
+}
+
+.filter .filter-btn:hover{
+    color: #0084cc;
+}
+
+.filter .filter-btn:first-child{
+    margin-left: 0;
+}
+
+.filter .filter-btn:last-child{
+    margin-right: 0;
+}
+
+/* Items Row */
+.product{
+    position: relative;
+    transition: .5s;
+}
+
+.product:hover{
+    -webkit-box-shadow: 0px 0px 25px -10px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 25px -10px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 25px -10px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.product:hover .product-hover{
+    top: 100%;
+    -webkit-box-shadow: 0px 0px 25px -10px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 25px -10px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 25px -10px rgba(0,0,0,0.5);
+    opacity: 1;
+    z-index: -1;
+}
+
+.price{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.price span{
+    font-family: "Proximanova-Light";
+    font-weight: 300;
+    font-size: 21px;
+    color: #9a9a9a;
+}
+
+.price span sup{
+    font-size: 12px;
+}
+
+.product-details{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s;
+    opacity: 0;
+}
+
+.product:hover .product-details{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.product-details a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #222222;
+    transition: .4s;
+}
+
+.product-details a:hover{
+    color: #ffffff;
+    background-color: #0084cc;
+    transform: scale(1.15);
+}
+
+.product-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    border-top: 1px solid #eeeeee;
+    transition: .5s;
+    background-color: #ffffff;
+    opacity: 0;
+    z-index: -1;
+}
+
+.product-hover > a{
+    font-family: "Montserrat-Bold";
+    font-weight: 700;
+    font-size: 13px;
+    color: #737373;
+    text-transform: uppercase;
+    transition: .4s;
+}
+
+.product-hover > a:hover{
+    color: #0084cc;
+}
+
+.product-hover h6{
+    font-family: "Roboto-Regular";
+    font-weight: 400;
+    font-size: 13px;
+    color: #737373;
+    text-transform: capitalize;
+    padding: 12px 0;
+}
+
+.product-hover ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #727272;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.product-hover ul li a{
+    font-size: 15px;
+    color: #ffffff;
+    transition: .4s;
+}
+
+.product-hover ul li:hover{
+    background-color: #0084cc;
+    transform: scale(1.05);
+}
+/************** Items Secttion End **************/
+
+
+
+/************** 6. Lookbook Banner Secttion Start **************/
+.sudipta-look-banner{
+    margin-bottom: 100px;
+}
+
+.look-banner{
+    padding: 100px 40px 150px;
+    text-align: right;
+}
+
+.look-banner.bg-one{
+    background: url(../images/lookbook-1.jpg) no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+.look-banner.bg-two{
+    background: url(../images/lookbook-2.jpg) no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+.look-banner.bg-three{
+    background: url(../images/lookbook-3.jpg) no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+.look-banner h2{
+    font-family: "Montserrat-Medium";
+    font-weight: 700;
+    font-size: 45px;
+    color: #575153;
+    text-transform: uppercase;
+}
+.look-banner h2 span,
+.look-banner p,
+.look-banner a{
+    font-family: "Montserrat-Regular";
+    font-weight: 400;
+}
+
+.look-banner p{
+    margin: 10px 0 15px auto;
+    width: 100%;
+    max-width: 17rem;
+    font-size: 13px;
+    color: #575153;
+}
+
+.look-banner a{
+    padding: 15px 25px;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #0084cc;
+    text-transform: uppercase;
+    transition: .4s;
+}
+
+.look-banner a:hover{
+    background-color: #222222;
+}
+/************** Lookbook Banner Secttion End **************/
+
+
+
+/************** 7. Footer Secttion Start **************/
+.footer{
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+/* Footer Top */
+.footer-title{
+    display: block;
+    font-family: "Montserrat-SemiBold";
+    font-weight: 600;
+    font-size: 13px;
+    color: #222222;
+}
+
+.footer-link li a,
+.contact-details p,
+.contact-details p a{
+    font-family: "Montserrat-Regular";
+    font-weight: 400;
+    padding: 5px 0;
+    color: #727272;
+    font-size: 14px;
+    transition: .4s;
+}
+
+.footer-link li a:hover{
+    margin-left: 5px;
+    color: #0084cc;
+}
+
+.contact-details p a:hover{
+    color: #0084cc;
+}
+
+/* Footer Bottom */
+.footer-bottom{
+    margin-top: 50px;
+}
+
+.footer-banner,
+.footer-social{
+    height: 100%;
+    padding: 50px 10px;
+}
+
+.footer-banner{
+    background-color: #333333;
+}
+
+.footer-banner h3,
+.footer-banner h3 span{
+    color: #ffffff;
+    font-size: 36px;
+}
+
+.footer-banner h3{
+    font-family: "Proximanova-Bold";
+    font-weight: 700;
+}
+.footer-banner h3 span{
+    display: block;
+    font-family: "Proximanova-Light";
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.footer-social{
+    background-color: #0084cc;
+}
+
+.footer-social ul li{
+    padding: 0 20px;
+}
+
+.footer-social ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 30px;
+    transition: .4s;
+}
+
+.footer-social ul li a:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.75);
+}
+
+/* Footer Copyright */
+.copyright{
+    padding: 15px 0;
+    background-color: #333333;
+}
+
+.copy-r-text,
+.copy-r-text a{
+    font-family: "Montserrat-Medium";
+    font-weight: 500;
+    color: #a7a0a0;
+    font-size: 13px;
+    transition: .4s;
+}
+
+.copy-r-text sup{
+    font-size: 8px;
+}
+
+.copy-r-text a:hover{
+    color: #0084cc;
+}
+/************** Footer Secttion End **************/

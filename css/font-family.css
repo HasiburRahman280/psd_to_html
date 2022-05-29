@@ -1,0 +1,46 @@
+/************** 1. Font Family Import Start **************/
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(../webfonts/font-family/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Proximanova-Light";
+    src: url(../webfonts/font-family/proximanova-light.otf);
+}
+
+@font-face {
+    font-family: "Proximanova-Bold";
+    src: url(../webfonts/font-family/proximanova-bold.otf);
+}
+
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url(../webfonts/font-family/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url(../webfonts/font-family/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-Medium";
+    src: url(../webfonts/font-family/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url(../webfonts/font-family/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url(../webfonts/font-family/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "fa-solid";
+    src: url(../webfonts/fa-solid-900.ttf);
+}
+/************** Font Family Import End **************/

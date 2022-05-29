@@ -1,0 +1,668 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+/************** Header Section Start **************/
+.right-collumn ul li {
+    padding: 10px 8px;
+}
+
+#currency, .currency-input label,
+.right-collumn ul li a{
+    font-size: 11px;
+}
+
+#currency{
+    padding: 0;
+}
+
+.currency-input {
+    padding: 10px 0;
+}
+
+.cart {
+    margin-left: 0;
+}
+
+.cart a{
+    padding: 12px 8px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.fixed-top {
+    margin-top: 45px;
+}
+
+.navbar-brand img{
+    max-width: 180px;
+}
+
+.menu-btn svg{
+    font-size: 25px;
+}
+/************** Header Section End **************/
+
+
+/************** Hero Section Start **************/
+.hero-btn{
+    left: 50%;
+}
+
+.hero-btn a{
+    font-size: 12px;
+    padding: 12px 15px;
+}
+/************** Hero Section End **************/
+
+
+
+/************** Product Section Start **************/
+/* Hr Top */
+.products-hr {
+    margin: 30px 0 15px;
+}
+
+.products-hr-1{
+    margin: 30px 0;
+}
+
+.filter {
+    margin-bottom: 20px;
+}
+
+/* Filter Button */
+.filter{
+    text-align: center;
+}
+
+.filter .filter-btn{
+    margin: 10px 15px;
+}
+
+.filter .filter-btn:first-child{
+    margin-left: 15px;
+}
+
+.filter .filter-btn:last-child{
+    margin-right: 15px;
+}
+/************** Product Section End **************/
+
+
+
+/************** Lookbook Banner Secttion Start **************/
+.sudipta-look-banner {
+    margin-bottom: 60px;
+}
+
+.look-banner {
+    padding: 40px 20px;
+}
+
+.look-banner h2 {
+    font-size: 25px;
+}
+
+.look-banner a {
+    padding: 12px 20px;
+    font-size: 13px;
+}
+/************** Lookbook Banner Secttion End **************/
+
+
+/************** Banner Secttion Start **************/
+.overlay {
+    padding: 60px 10px;
+}
+
+.banner-content h2{
+    font-size: 28px;
+}
+
+.banner-content h5 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+/************** Banner Secttion End **************/
+
+
+
+/************** Brand Secttion Start **************/
+.sharmin-brands {
+    padding: 50px 0;
+}
+
+.brand-content h5{
+    font-size: 16px;
+}
+
+.brand-content h6{
+    font-family: 12px;
+}
+
+.brand-logo {
+    margin-top: 40px;
+}
+/************** Brand Secttion End **************/
+
+
+
+/************** Contact Secttion Start **************/
+.hasibur-contact{
+	margin-bottom: 50px;
+}
+/************** Contact Secttion End **************/
+
+
+
+/************** Footer Section Start **************/
+.footer-banner,
+.footer-social {
+    padding: 30px 10px;
+}
+
+.footer-banner h3, .footer-banner h3 span {
+    font-size: 23px;
+}
+
+.footer-social ul li {
+    padding: 0 15px;
+}
+
+.footer-social ul li a {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+}
+
+.footer-link li a:hover {
+    margin-left: 0;
+}
+/************** Footer Section End **************/
+}
+
+
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+/************** Header Section Start **************/
+.currency-input {
+    padding: 10px 0;
+}
+
+.right-collumn ul li {
+    padding: 10px 20px;
+}
+
+.cart a{
+    padding: 10px 20px;
+}
+
+.fixed-top {
+    margin-top: 50px;
+}
+/************** Header Section End **************/
+
+
+
+/************** Hero Section Start **************/
+.hero-btn{
+    left: 68%;
+}
+/************** Hero Section End **************/
+
+
+
+/************** Product Section Start **************/
+/* Hr Top */
+.products-hr {
+    margin: 40px 0 20px;
+}
+
+.products-hr-1{
+    margin: 40px 0;
+}
+
+.filter {
+    margin-bottom: 20px;
+}
+
+/* Filter Button */
+.filter{
+    text-align: center;
+}
+
+.filter .filter-btn{
+    margin: 10px 25px;
+}
+
+.filter .filter-btn:first-child{
+    margin-left: 25px;
+}
+
+.filter .filter-btn:last-child{
+    margin-right: 25px;
+}
+
+/* Products Row */
+.product-hover{
+    padding: 15px;
+}
+
+.product-hover h6{
+    padding: 10px 0;
+}
+
+.product-hover ul li{
+    margin: 0 5px;
+}
+/************** Product Section End **************/
+
+
+
+/************** Lookbook Banner Secttion Start **************/
+.sudipta-look-banner {
+    margin-bottom: 80px;
+}
+
+.look-banner {
+    padding: 40px 20px 50px;
+}
+
+.look-banner h2 {
+    font-size: 30px;
+}
+
+.look-banner a {
+    padding: 12px 20px;
+    font-size: 13px;
+}
+/************** Lookbook Banner Secttion End **************/
+
+
+
+/************** Banner Secttion Start **************/
+.overlay {
+    padding: 60px 10px;
+}
+
+.banner-content h2{
+    font-size: 30px;
+}
+
+.banner-content h5 {
+    margin-top: 10px;
+    font-size: 22px;
+}
+/************** Banner Secttion End **************/
+
+
+
+/************** Brand Secttion Start **************/
+.sharmin-brands {
+    padding: 60px 0;
+}
+
+.brand-content h5{
+    font-size: 16px;
+}
+
+.brand-content h6{
+    font-family: 12px;
+}
+
+.brand-logo {
+    margin-top: 40px;
+}
+/************** Brand Secttion End **************/
+
+
+
+/************** Contact Secttion Start **************/
+.hasibur-contact{
+	margin-bottom: 60px;
+}
+
+.contact-content {
+    padding: 20px 15px;
+}
+
+.media {
+    margin-top: 30px;
+}
+/************** Contact Secttion End **************/
+
+
+
+/************** Footer Section Start **************/
+.footer-banner,
+.footer-social {
+    padding: 35px 10px;
+}
+
+.footer-banner h3, .footer-banner h3 span {
+    font-size: 28px;
+}
+
+.footer-social ul li {
+    padding: 0 15px;
+}
+
+.footer-social ul li a {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+}
+/************** Footer Section End **************/
+}
+
+
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+/************** Product Section Start **************/
+.filter .filter-btn{
+    margin: 0 14px;
+}
+
+.product-hover{
+    padding: 10px;
+}
+
+.product-hover h6{
+    padding: 10px 0;
+}
+
+.product-hover ul li{
+    margin: 0 5px;
+}
+/************** Product Section End **************/
+
+
+
+/************** Lookbook Banner Secttion Start **************/
+.look-banner {
+    padding: 40px 20px;
+}
+
+.look-banner h2 {
+    font-size: 25px;
+}
+
+.look-banner a {
+    padding: 12px 20px;
+    font-size: 13px;
+}
+/************** Lookbook Banner Secttion End **************/
+
+
+
+/************** Banner Secttion Start **************/
+.overlay {
+    padding: 80px 10px;
+}
+
+.banner-content h2{
+    font-size: 35px;
+}
+
+.banner-content h5 {
+    margin-top: 10px;
+    font-size: 25px;
+}
+/************** Banner Secttion End **************/
+
+
+
+/************** Brand Secttion Start **************/
+.sharmin-brands {
+    padding: 60px 0 60px;
+}
+
+.brand-content h5{
+    font-size: 16px;
+}
+
+.brand-content h6{
+    font-family: 12px;
+}
+
+.brand-logo {
+    margin-top: 40px;
+}
+/************** Brand Secttion End **************/
+
+
+
+/************** Footer Section Start **************/
+.footer-banner,
+.footer-social {
+    padding: 35px 10px;
+}
+
+.footer-banner h3, .footer-banner h3 span {
+    font-size: 28px;
+}
+
+.footer-social ul li {
+    padding: 0 15px;
+}
+
+.footer-social ul li a {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+}
+/************** Footer Section End **************/
+}
+
+
+
+/* Maximum Off canvas Media */
+@media (max-width: 1199.98px) { 
+/************** Header Section Start **************/
+    .offcanvas{
+        overflow: scroll;
+        background-color: #333333;
+    }
+
+    .offcanvas-menu ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    .offcanvas-menu ul li{
+        list-style: none;
+    }
+
+    .item {
+        margin: 10px 30px;
+        display: inline-block;
+        text-decoration: none;
+        color: #ffffff;
+        padding: 5px 0;
+        transition: .5s;
+    }
+
+    .item:hover,
+    .common-drop .drop-item:hover,
+    .close-btn svg:hover{
+        color: #0084cc;
+    }
+    
+    .offcanvas-start{
+        width: 275px;
+    }
+    
+    .share-item{
+        margin-left: 31px;
+    }
+
+   .btn-icon{
+        font-size: 30px;
+        color: #333333;
+        transition: .4s;
+    }
+
+    .sticky .btn-icon{
+        color: #ffffff;
+    }
+
+    .btn-icon:hover{
+        color: #0084cc;
+    }
+
+    .btn-close:focus{
+        box-shadow: none;
+    }
+
+    .menu-btn{
+        padding: 3px 7px;
+        background: transparent;
+        border: none;
+    }
+
+    .menu-btn:focus{
+        box-shadow: none;
+    }
+
+    .menu-btn:focus-visible{
+        outline: none;
+    }
+    
+    .offcanvas-header .btn-close {
+        padding: .7rem .5rem;
+    }
+
+    .d-lg-none{
+        display: block !important;
+    }
+
+    #navbarNav{
+        display: none !important;
+    }
+
+    .navbar-brand {
+        padding: 0 0 10px;
+      }
+
+    .common-drop{
+        display: none;
+        padding-left: 45px !important;
+    }
+
+    .common-drop span{
+        color: #ffffff;
+        font-size: 13px;
+    }
+
+    .common-drop li{
+        padding-left: 15px;
+    }
+
+    .common-drop .drop-item{
+        margin: 5px 0;
+        color: #e3dede;
+        font-size: 13px;
+        transition: .4s;
+    }
+
+    .close-btn{
+        background: transparent;
+        border: none;
+    }
+
+    .close-btn svg{
+        font-size: 20px;
+        color: #ffffff;
+        transition: .4s;
+    }
+
+    .search-form {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .search-btn {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .submit-btn {
+        transform: translate(7rem, -50%);
+    }
+/************** Header Section End **************/
+}
+
+
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+/************** Lookbook Banner Secttion Start **************/
+.look-banner {
+    padding: 40px 40px 70px;
+}
+
+.look-banner h2 {
+    font-size: 35px;
+}
+
+.look-banner a {
+    padding: 12px 20px;
+    font-size: 13px;
+}
+/************** Lookbook Banner Secttion End **************/
+
+
+/************** Banner Secttion Start **************/
+.overlay {
+    padding: 100px 10px;
+}
+
+.banner-content h2{
+    font-size: 35px;
+}
+
+.banner-content h5 {
+    margin-top: 10px;
+    font-size: 25px;
+}
+/************** Banner Secttion End **************/
+
+
+/************** Brand Secttion Start **************/
+.brand-logo {
+    margin-top: 40px;
+}
+/************** Brand Secttion End **************/
+}
+
+
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+    /* Common Style */
+    .custom-container{
+        padding: 0 40px;
+    }
+}
+
+
+
+/*Extra Extra large devices (large desktops, 1400px and up)*/
+@media (min-width: 1400px){ 
+    /* Common Style */
+    .custom-container{
+        padding: 0 50px;
+    }
+}
+
+
+
+/*Extra Extra large devices (large desktops, 1400px and up)*/
+@media (min-width: 1500px){ 
+    /* Common Style */
+    .custom-container{
+        padding: 0 100px;
+    }
+}
+
